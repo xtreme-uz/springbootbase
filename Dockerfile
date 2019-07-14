@@ -3,7 +3,7 @@ LABEL Author="kasun.ranasinghe@icloud.com"
 
 WORKDIR /base
 COPY . /base/
-
+RUN cd /base/
 RUN mvn install
 
 ENTRYPOINT "ls -al target/"
