@@ -6,4 +6,4 @@ COPY . /base/
 RUN cd /base/
 RUN mvn install
 
-ENTRYPOINT "ls -al target/"
+ENTRYPOINT "java -jar target/spring-boot-dependencies.jar"
