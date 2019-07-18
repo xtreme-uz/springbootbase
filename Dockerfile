@@ -1,4 +1,4 @@
-FROM maven:3.6.1-jdk-11-slim
+FROM maven:3.6.1-jdk-8
 LABEL Author="kasun.ranasinghe@icloud.com" 
 
 WORKDIR /base

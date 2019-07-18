@@ -15,7 +15,7 @@
 	<description>Spring Boot Dependencies</description>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 		<azure.version>2.1.6</azure.version>
 		<spring-cloud-services.version>2.1.4.RELEASE</spring-cloud-services.version>
 		<spring-cloud.version>Greenwich.SR2</spring-cloud.version>
