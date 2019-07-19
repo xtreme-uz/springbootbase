@@ -7,7 +7,7 @@ then
 fi
 DOCKER_IMAGE=keaz/${BASE_IMAGE}:${VERSION}
 tput setaf 7;
-tput bold setaf 1; echo "Create image using ${VERSION} tag"
+tput bold setaf 1; echo "Creating image using ${VERSION} tag"
 tput sgr0;
 docker build -t ${DOCKER_IMAGE} .
 
@@ -16,7 +16,7 @@ tput setaf 7;
 tput bold setaf 1;
 if [[ -z "$OLD_CONTAINERS" ]]
 then
-   echo "No Containers running"
+   echo "No Containers are running"
 else
     echo "Removing old containers ${OLD_CONTAINERS}"
     docker rm -f ${OLD_CONTAINERS}
@@ -24,7 +24,7 @@ fi
 tput sgr0;
 
 tput setaf 7;
-tput bold setaf 1; echo "Starting new container ${BASE_IMAGE}"
+tput bold setaf 1; echo "Starting a new container ${BASE_IMAGE}"
 tput sgr0;
 docker run --name=${BASE_IMAGE} ${DOCKER_IMAGE}
 
