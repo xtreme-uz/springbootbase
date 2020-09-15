@@ -5,7 +5,7 @@ if [[ -z "$VERSION" ]]
 then
     VERSION="latest"
 fi
-DOCKER_IMAGE=keaz/${BASE_IMAGE}:${VERSION}
+DOCKER_IMAGE=xtreme/${BASE_IMAGE}:${VERSION}
 tput setaf 7;
 tput bold setaf 1; echo "Creating image using ${VERSION} tag"
 tput sgr0;

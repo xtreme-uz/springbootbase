@@ -1,12 +1,12 @@
 # SpringBoot Base Image
 
-SpringBoot base image contains all the necessary dependencies. Image is based on Spring boot 2.1.6.
-Image will be built for java 8 and above versions.
+SpringBoot base image contains all the necessary dependencies. Image is based on Spring boot 2.3.3.
+Image will be built for java 11 and above versions.
 
 Main purpose of this image is to use this as a builder image (in multistage build)
 
 ```
-FROM keaz/springbootbase:latest as builder
+FROM xtremes/springbootbase as builder
 WORKDIR /app
 COPY src /app/src
 COPY pom.xml /app/

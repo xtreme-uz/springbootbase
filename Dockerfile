@@ -1,5 +1,5 @@
-FROM maven:3.6.1-jdk-11-slim
-LABEL Author="kasun.ranasinghe@icloud.com" 
+FROM maven:3.6.3-jdk-11-slim
+LABEL Author="rustambekov.mail.box@gmail.com" 
 
 WORKDIR /base
 COPY . /base/
